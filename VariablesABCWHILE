@@ -1,0 +1,114 @@
+#include <stdio.h>
+int main(void){
+	int A=0, B=0, C=0;
+	float res;
+	int d;
+	printf ("introduzca el primer valor \n ");
+	scanf("%d", &A);
+	printf("introduzca el segundo valor \n ");
+	scanf("%d", &B);
+	printf("introduzca el tercer valor \n ");
+	scanf("%d", &C);
+	printf("indique la operacion a realizar \n 1)A mayor a 3 \n 2)A mayor a C \n 3)B multiplo de C \n 4)A igual a 3 \n 5)B*A igual a 15 \n 6) C sobre B menor a A \n 7)C sobre B igual a -10 \n 8)La suma de los tres terminos es 5 \n 9)A+B igual a 8 y A-B igual a 2 \n 10)A+B igual a 8 o A-B igual a 6\n 11)A y B mayor a 3 y C menor a 3\n"); 
+	scanf("%d", &d);
+	
+	{
+	
+	switch(d)
+		{
+		case 1:
+		 if (A>3)
+	printf("A es mayor que 3 \n");
+	else 
+	printf("A no es mayor que 3 \n");
+		break;
+		
+		case 2:
+				if (A>C)
+	printf("A es mayor que C \n");
+	else 
+	printf("A no es mayor que C \n ");
+	
+		
+		break;
+		
+		case 3:
+			if (B!=C)
+	printf("B es deS a C \n");
+	else 
+	printf("B es igu a C \n");
+	
+		break;
+		
+		case 4:
+			if (A==3)
+	printf("A es igual a 3 \n");
+	else 
+	printf("A no es igual a 3 \n");
+	
+		break;
+		
+			case 5:
+			if (A*B==15)
+	printf("A*B es igaul a 15 \n");
+	else 
+	printf("A*B no es igual a 15 \n");
+		break;
+		
+		case 6:
+				if (C/B<A)
+	printf("C/B es menor que A \n");
+	else 
+	printf("C sobre B no es menor que A \n");
+		
+		break;
+		
+		case 7:
+			 if (C/B==-10)
+	printf("C/B es igual a -10 \n");
+	else 
+	printf("C/B no es igual a-10 \n");
+	
+		break;
+		
+		case 8:
+		if (A+B+C==5)
+	printf("la suma es igual a 5 \n");
+	else 
+	printf("la suma no es igual a 5 \n");
+	
+		case 9:
+					if (((A+B) == 8) && ((A-B) == 2))      
+	printf("la suma de A+B es igual a 8 y la resta es igual a 2 \n");
+	else 
+	printf("la suma de A+B es NO igual a 8 y la resta NO es igual a 2 \n");
+		
+		break;
+		
+		case 10:
+			 if ((A+B == 8) || (A-B == 6))
+	printf("la suma de A+B es igual a 8 y la resta igual a 6 \n");
+	else 
+	printf("la suma de A+B es NO igual a 8 y la resta igual a 6 \n");
+	
+		break;
+		
+		case 11:
+		if (A > 3 && B > 3 && C < 3)
+	printf("Los valores son iguales a 3  \n");
+	else 
+	printf("Los valores no son igaules a 3 \n");
+	
+		default:
+			printf("opcion invalida");
+	}
+	
+
+	
+	}
+	
+	
+return 0;
+
+	}
+	
